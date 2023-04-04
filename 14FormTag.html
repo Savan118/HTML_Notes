@@ -87,55 +87,149 @@
         </p>
     </ol>
     <h3>Example of form</h3>
+
+    <table align="center" border="1">
+        <tr>
+            <td colspan="2" align="center">
+                <h3>This is Form</h3>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="usernameid">User Name</label></td>
+            <td><input type="text" placeholder="Enter User Name" name="username" id="usernameid"></td>
+        </tr>
+        <tr>
+            <td><label for="Password">Password</label></td>
+            <td><input type="password" placeholder="Password" name="Password" id="Password"></td>
+        </tr>
+        <tr>
+            <td><label for="">Email ID</label></td>
+            <td><input type="email" placeholder="Enter Ur Email here" value="savan.kadia@gmail.com" name="" id="">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Phone</label></td>
+            <td><input type="tel" placeholder="mobile" name="" id=""></td>
+        </tr>
+        <tr>
+            <td><label for="">Age</label></td>
+            <td><input type="number" placeholder="age" name="" id=""></td>
+        </tr>
+        <tr>
+            <td><label for="">Gender</label></td>
+            <td>
+                <input type="radio" name="Gender" value="Male" id="Male"><label for="Male"> Male</label>
+                <input type="radio" name="Gender" value="Female" id="">Female
+            </td>
+        </tr>
+        <tr>
+            <!-- This is multi selection input type -->
+            <!-- name = chk[] is used for backend perspective and will get in array -->
+            <td><label for="">Hobbies</label></td>
+            <td>
+                <input type="checkbox" name="chk[]" id="Cricket"><label for="Watching Movies">Watching
+                    Movies</label><br>
+                <input type="checkbox" name="chk[]" id="Music"><label for="Listening Music">Listening Music</label><br>
+                <input type="checkbox" name="chk[]" id="Reading"><label for="Reading">Reading</label><br>
+                <input type="checkbox" name="chk[]" id="Travelling"><label for="Travelling">Travelling</label><br>
+                <input type="checkbox" name="chk[]" id="Nothing"><label for="Playing Games">Playing Games</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Address</label></td>
+            <td>
+                <textarea name="" id="" cols="50" rows="3"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">City</label></td>
+            <td>
+                <select name="city" id="">
+                    <option value="">select city</option>
+                    <option value="Ahemdabad">Ahemdabad</option>
+                    <option value="Himmatnagar">Himmatnagar</option>
+                    <option value="Mehsana">Mehsana</option>
+                    <option value="Gandhinagar">Gandhinagar</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <!-- Selection List -->
+            <td><label for="">Education</label></td>
+            <td>
+                <select name="education" multiple id="">
+                    <option value="">10th</option>
+                    <option value="">12th</option>
+                    <option value="">Msc.it</option>
+                    <option value="">Mpharm</option>
+                    <option value="">MSC</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <!-- Color picker -->
+            <td><label for="">Color</label></td>
+            <td>
+                <input type="color" name="" id="">
+            </td>
+        </tr>
+        <tr>
+            <!-- Date of Birth -->
+            <td><label for="">DOB</label></td>
+            <td>
+                <input type="date" name="" id="">
+            </td>
+        </tr>
+        <tr>
+            <!-- Data list is used to show suggestion -->
+            <td><label for="">Data List (show suggestion)</label></td>
+            <td>
+                <input list="ice-cream-flavors" name="" id="">
+                <datalist id="ice-cream-flavors">
+                    <option value="Chocolate">
+                    <option value="Fruit n Nut">
+                    <option value="Strawberry">
+                    <option value="Vanilla">
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <!-- This will disabled the field -->
+            <td><label for="">Disabled</label></td>
+            <td>
+                <input type="email" value="this is disabled field" disabled name="" id="">
+            </td>
+        </tr>
+        <tr>
+
+            <!-- Non editable but read only -->
+            <td><label for="">readOnly</label></td>
+            <td>
+                <input type="email" value="This is read only field" readonly name="" id="">
+            </td>
+        </tr>
+        <tr>
+            <!-- accept attrib helps to select only images/docs/pdf etc -->
+            <td><label for="">Doc</label></td>
+            <td><input type="file" value="" accept="image/*" name="" value="" id=""></td>
+        </tr>
+        <tr>
+            <td><label for="">Meter</label></td>
+            <td>
+                <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="80">
+                    at 50/100
+                </meter>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Range Selector</label></td>
+            <td><input type="range" value="Save" name="" value="" id=""></td>
+        </tr>
+        <tr>
+            <td><label for=""></label></td>
+            <td><input type="submit" name="" id=""></td>
+        </tr>
+    </table>
 </body>
-
-<table>
-    <form method="post">
-
-        <tr>
-            <td>First Name:</td>
-            <td><input type="text" name="fname"></td>
-        </tr>
-        <tr>
-            <td>Last Name:</td>
-            <td><input type="text" name="lname"></td>
-
-        </tr>
-        <tr>
-            <td>Email Id:</td>
-            <td><input type="email" name="email"></td>
-
-        </tr>
-        <tr>
-            <td>Password:</td>
-            <td><input type="password" name="pass"></td>
-
-        </tr>
-        <tr>
-            <td>Gender:</td>
-            <td><input type="Radio" name="gender" value="male">Male</td>
-            <td><input type="Radio" name="gender" value="female">Female</td>
-        </tr>
-        <tr>
-            <td>Password:</td>
-            <td><input type="password" name="pass"></td>
-
-        </tr>
-        <tr>
-            <td>Password:</td>
-            <td><input type="password" name="pass"></td>
-
-        </tr>
-
-        <tr>
-            <td></td>
-            <td><input type="submit" name=""></td>
-
-        </tr>
-
-    </form>
-
-</table>
-
 
 </html>
