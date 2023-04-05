@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Intro</title>
+</head>
+
+<body>
+    <h2 style="text-align: center">Iframe Introduction</h2>
+    <p>It is used to display a webpage within another webpage</p>
+    <p>
+    <h3><strong> Iframe Syntax:</strong></h3>
+    </p>
+    <p><strong>&lt;iframe&gt;</strong> tag specifies an inline frame. This inline frame is used to embed another
+        document within the
+        current
+        html document
+    </p><br>
+    <p>Syntax example below</p>
+    <p><strong>&lt;iframe src="url" title="description"&gt;</strong>
+    </p>
+    <p> It is a good practice to always include a title attribute for the &lt;iframe&gt;. This is used by screen readers
+        to read out what the content of the iframe is.
+    </p><br>
+    <p>
+    <h3> ** Use height and width to specify the size ofthe iframe</h3>
+    </p>
+    <p><strong>&lt;iframe src="demo_iframe.htm" height="200" width="300" title="Iframe
+            Example"&gt;&lt;/iframe&gt;</strong>
+    </p><br>
+    <p>
+    <h3> ** You can also add style attribute and use css height and width properties:</h3>
+    </p>
+    <p><strong>&lt;iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe
+            Example"&gt;&lt;/iframe&gt;</strong>
+    </p><br>
+    <p>
+    <h3>** Iframe-Remove the border</h3>
+    </p>
+    <p>
+        To remove border add style attribute and use the CSS border property.</p>
+    <p>
+        <strong>&lt;iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"&gt;&lt;/iframe&gt;</strong>
+    </p><br>
+    <p>
+        You can also use css style to change the size and color of the iframe's border:</p>
+    <p>
+        <strong> &lt;iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe
+            Example"&gt;&lt;/iframe&gt;</strong>
+    </p>
+    <p><br>
+    <h3><strong> Iframe - Target for a Link</strong></h3>
+    </p>
+    <p>
+        An iframe can be used as the target frame for a link. The target attribute of the link must refer to the name
+        attribute ofthe iframe</p>
+    <p>
+        <strong> &lt;iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"&gt;&lt;/iframe&gt;</strong>
+    </p>
+
+    <p><strong>&lt;a href="https://www.w3schools.com" target="iframe_a"&gt;W3Schools.com&lt;/a&gt;&lt;/p&gt;</strong>
+    <p><br>
+    <h3> ** When the target attribute of a link matches the name of an iframe, the link will open in the iframe</h3>
+    </p>
+    <p>
+        In essence, the target of a url can be a new (_blank) page and can also be the name (attribute) of an iframe</p>
+
+</body>
+
+</html>
